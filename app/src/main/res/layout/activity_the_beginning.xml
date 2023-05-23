@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TheBeginning">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        app:srcCompat="@drawable/planeCrash" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFC107"
+        android:text="\nYou open your eyes and see the wreckage of a plane, you think to yourself I must have been thrown from the plane upon landing. you look around and see a dense forest with lots of greenery. You see a large cave with a really dark opening, an overgrown path that looks undisturbed for years, and a temple off in the distance \ndo you enter the cave, follow the path, or make your way to the temple?"
+        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        android:textSize="20sp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.79" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="546dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@+id/guideline11"
+        tools:layout_editor_absoluteX="1dp">
+
+        <Button
+            android:id="@+id/btn_cave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cave" />
+
+        <Button
+            android:id="@+id/btn_forest_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="forest path" />
+
+        <Button
+            android:id="@+id/btn_temple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="temple" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
