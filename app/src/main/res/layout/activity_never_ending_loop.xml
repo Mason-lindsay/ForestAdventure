@@ -4,48 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Continue">
-
+    tools:context=".NeverEndingLoop">
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imageView8"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/lightAtTunnel" />
+        app:srcCompat="@drawable/loop" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:text="You step into the cave and look around, It's very damp inside and you see a faint light at the other end. You walk down the cave for what seems like hours and collapse. How long is this cave? you think to yourself. You turn around and are shocked when you see that the entrance to the cave is gone. You turn back around and realize the light at the other end is gone as well. You stumble around, disoriented by the blackness of the cave until eventually you fall to the floor with no hopes of escape and die of dehydration. \nGame Over."
-        app:layout_constraintBottom_toTopOf="@+id/guideline20"
+        android:textColor="#2196F3"
+        android:text="You walk down the path toward the gleam in the distance, but after you come around a hill the gleam disappears and You trudge down the path beating aside grass that has grown up to your waist, and pass a fallen tree that looks like a shattered femur, that looks familiar..., you think to yourself not fully realizing what is happening, eventually you come to a clearing and after you turn left you see a warm glow in the distance. You walk down the path toward the gleam in the distance, but after you come around a hill the gleam disappears and You trudge down the path beating aside grass that has grown up to your waist, and pass a fallen tree that looks like a shattered femur, suddenly you break down,  what the hell is going on here you groan to yourself as you realize, you are lost and there is no escape. \nGame Over"
+        app:layout_constraintBottom_toTopOf="@+id/guideline23"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline20"
+        android:id="@+id/guideline23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.26" />
+        app:layout_constraintGuide_percent="0.32" />
 
     <Button
-        android:id="@+id/btn_restart1"
+        android:id="@+id/btn_restart2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Restart?"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
