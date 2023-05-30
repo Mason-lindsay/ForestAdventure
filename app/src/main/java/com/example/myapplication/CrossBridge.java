@@ -7,18 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Hut extends AppCompatActivity {
+public class CrossBridge extends AppCompatActivity {
 
     private Button restart;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hut);
+        setContentView(R.layout.activity_cross_bridge);
+        restart = findViewById(R.id.restart4);
 
-        restart = findViewById(R.id.btn_restart3);
-
-        Intent intentRestart = new Intent(Hut.this,MainActivity.class);
+        Intent intentRestart = new Intent(CrossBridge.this,MainActivity.class);
 
         restart.setOnClickListener(new View.OnClickListener() {
             @Override

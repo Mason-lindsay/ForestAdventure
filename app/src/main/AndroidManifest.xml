@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Lucky"
+            android:exported="false" />
+        <activity
+            android:name=".Lost"
+            android:exported="false" />
+        <activity
+            android:name=".CrossBridge"
+            android:exported="false" />
+        <activity
+            android:name=".ContinueDownPath3"
+            android:exported="false" />
+        <activity
             android:name=".ContinueDownPath2"
             android:exported="false" />
         <activity

@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Temple">
+    tools:context=".CrossBridge">
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/imageView10"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="fitXY"
@@ -15,33 +15,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/temple_in_distance" />
+        app:srcCompat="@drawable/bridge" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#8E0505"
-        android:text="Walking through the dense forest you become disoriented, eventually you stop, all you can see is green. Worried, you begin to doubt yourself. Am I going the right way? you think to yourself. You hear a noise off in the distance to your left. You test your luck, realizing you have a 1 in 4 chance of going the right way. closing your eyes you roll a die you have in your backpack."
-        app:layout_constraintBottom_toTopOf="@+id/guideline30"
+        android:textColor="@color/black"
+        android:text="You take a step onto the bridge and feel a gust of wind across your face. With each step you feel the bridge creaking beneath your weight. You take another step forward and hear a crack, suddenly, you're falling toward the ground below. You scream, but nobody can hear you. All you amounted to was a puddle at the bottom of a chasm. \nGame Over"
+        app:layout_constraintBottom_toTopOf="@+id/guideline28"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline30"
+        android:id="@+id/guideline28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.14" />
+        app:layout_constraintGuide_percent="0.17" />
 
     <Button
-        android:id="@+id/roll_die"
+        android:id="@+id/restart4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/buttons"
-        android:text="roll die"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        android:text="Restart?"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

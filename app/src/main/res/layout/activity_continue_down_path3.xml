@@ -4,44 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Temple">
+    tools:context=".ContinueDownPath3">
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/imageView11"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/temple_in_distance" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/chasm" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#8E0505"
-        android:text="Walking through the dense forest you become disoriented, eventually you stop, all you can see is green. Worried, you begin to doubt yourself. Am I going the right way? you think to yourself. You hear a noise off in the distance to your left. You test your luck, realizing you have a 1 in 4 chance of going the right way. closing your eyes you roll a die you have in your backpack."
-        app:layout_constraintBottom_toTopOf="@+id/guideline30"
+        android:textColor="#F44336"
+        android:text="You slowly descend into the chasm and think to yourself, Why did I come this way? As you descend you become more and more afraid of what awaits you at the bottom. After hours of walking, you make it to the bottom of the chasm and your heart is in your throat. You can feel the immense pressure as you step out into...nothing...just dirt and rocks littering the ground and a few tufts of grass here and there. You breathe out a sigh of relief and wonder why you were on edge. Then you hear a voice. You're boring, why'd you only follow the path? and then you die due to a heart attack. \n Game Over"
+        app:layout_constraintBottom_toTopOf="@+id/guideline29"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline30"
+        android:id="@+id/guideline29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.14" />
+        app:layout_constraintGuide_percent="0.26" />
 
     <Button
-        android:id="@+id/roll_die"
+        android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/buttons"
-        android:text="roll die"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        android:backgroundTint="@color/black"
+        android:text="restart?"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
