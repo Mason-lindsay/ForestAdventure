@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TreasureRoom">
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/treasure" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="You walk into the treasure room and see a mound of treasure reaching the ceiling. You stuff everything you can get your hands on into a sack you find by the door. Then, you pick up a fistfull of gold and hear a click. Suddenly, the temple starts shaking and it starts falling down around you. Panic sets in and you find yourself looking for an exit. seeing a small hole in the ceiling, you climb the mound of gold and grab on to the edge of the hole and pull yourself out. After you get out you run as fast as you can away from that place with your sack of priceless items. Dazed, you start walking until eventually you see a prick of light in the distance. A house! you shout with joy as you realize your struggles are over! Running as fast as you can you make it back to civilization and thank God that by some miracle you found a way out of the forest. You go on to sell your valuables to a museum and tell them of your findings, earning you millions of dollars, and you live out the rest of your life, as a rich person. \nGame Over."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_restart7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttons"
+        android:text="try again?"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

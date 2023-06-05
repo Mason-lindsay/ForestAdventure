@@ -23,7 +23,7 @@
         android:id="@+id/tv_titleScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Title Screen"
+        android:text="Catastrophe!"
         android:textColor="@color/material_dynamic_neutral100"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"

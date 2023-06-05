@@ -4,32 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lucky">
+    tools:context=".BronzeDoor">
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/imageView16"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/temple" />
+        app:srcCompat="@drawable/bronze_door" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You roll a 2. Deciding to follow your instincts you decide to forage straight ahead. Pushing your way through the foilage, you push through to a clearing and see a mighty temple standing in front of you. You wait for a few minutes reveling in its magnificance. Once you have soaked it all in, you realize you have yet another choice to make. There are two doors. One, is most likely a trap. So choose wisely. The door on the left is a big bronze door with a knocker midway up. The door on the right is a smaller platinum colored door with no handles."
+        android:textColor="@color/white"
+        android:text="Walking up to the massive bronze door, you don't realize how big it actually is until you get up close. Awed by its sheer colossal size , you knock on the knocker, wondering if there is something inside. Slowly, you watch the door open. as the door opens and you peer inside you see two rooms. One, filled with treasure. The other, only has a box. Do you take the treasure, or do you search the box?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="395dp"
+        android:layout_width="378dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,17 +36,17 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/btn_bronze_door"
+            android:id="@+id/btn_treasure_room"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/buttons"
-            android:text="Open the bronze door" />
+            android:text="enter treasure room" />
 
         <Button
-            android:id="@+id/btn_platinum_door"
+            android:id="@+id/btn_box"
+            android:backgroundTint="@color/buttons"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/buttons"
-            android:text="Open the platinum door" />
+            android:text="search box" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

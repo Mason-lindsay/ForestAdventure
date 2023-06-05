@@ -7,18 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Lost extends AppCompatActivity {
+public class Box extends AppCompatActivity {
 
-    private Button btnRestart;
+    private Button restart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lost);
+        setContentView(R.layout.activity_box);
 
-        btnRestart = findViewById(R.id.btn_restart4);
-        Intent intentRestart = new Intent(Lost.this, MainActivity.class);
+        restart = findViewById(R.id.btn_restart6);
 
-        btnRestart.setOnClickListener(new View.OnClickListener() {
+        Intent intentRestart = new Intent(Box.this, MainActivity.class);
+
+        restart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(intentRestart);

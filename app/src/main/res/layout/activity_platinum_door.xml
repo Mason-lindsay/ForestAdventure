@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lost">
+    tools:context=".PlatinumDoor">
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/imageView15"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -16,33 +16,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/lost" />
+        app:srcCompat="@drawable/platinum_door" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:text="You roll a 3. You turn left and hope the sound will lead you somewhere safe. You hear the noise again and continue heading in that direction. Eventually, the noise stops. Looking around once more, you realize you must have walked miles without realizing it. You turn in circles looking for anything that looks familiar. Finding nothing, you resign yourself to living in the forest, alone for the rest of your life. \nGame Over. Mediocre ending. Live out your life peacefully in the forest."
-        app:layout_constraintBottom_toTopOf="@+id/guideline31"
+        android:text="you walk up to the tiny platinum door, less than a quarter of the size of the bronze one, and then it hits you, how are you supposed to open it? You push with all your might, but the door just will not budge. frusturated you throw a rock at it. Suddenly, the temple shakes and starts to cave in! Yelling, you run for cover behind some nearby trees. After the rumbling stops, you slowly crawl out from behind your rock. Now with the temple gone, you are stuck. What do I do now? You think to yourself and eventually decide to continue walking. Eventually you see a light off in the distance. A house! you shout with joy as you realize your struggles are over! Running as fast as you can you make it back to civilization and thank God that by some miracle you found a way out of the forest. You continue to live your humble life a changed man, you will never fly in an airplane again for as long as you live. /nGame Over. Mediocre ending: found your way back, but did not acquire any riches."
+        app:layout_constraintBottom_toTopOf="@+id/guideline32"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline31"
+        android:id="@+id/guideline32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.21" />
+        app:layout_constraintGuide_percent="0.36" />
 
     <Button
-        android:id="@+id/btn_restart4"
+        android:id="@+id/btn_restart5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/buttons"
         android:text="restart?"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
